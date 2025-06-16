@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grayforge Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Garamond', serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-gray-950 to-gray-800 text-white flex items-center justify-center px-4">
+    <main class="max-w-2xl text-center">
+      <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+        Grayforge Holdings
+      </h1>
+      <p class="text-xl text-gray-300 mb-6">
+        A private holding company focused on building value through innovation, investment, and integrity.
+      </p>
+      <div class="mt-10 space-y-2">
+        <p class="text-lg text-gray-400">Runewerks LLC – Strategic Technology Consulting</p>
+        <p class="text-lg text-gray-400">Future Ventures – Quantitative Trading, Real Estate, and IP Holdings</p>
+      </div>
+      <footer class="mt-16 text-sm text-gray-500">
+        © <span id="year"></span> Grayforge Holdings LLC. All rights reserved.
+      </footer>
+    </main>
+
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
