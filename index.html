@@ -54,20 +54,44 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(255, 255, 255, 0.95);
       padding: 0.75rem 0;
       text-align: center;
+      border-bottom: 1px solid #ddd;
     }
 
-    header a {
-      color: #00aaff;
-      text-decoration: none;
+    nav {
+      display: inline-block;
+    }
+
+    .nav-link {
+      display: inline-block;
       margin: 0 1rem;
-      font-size: 0.95rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
-    header a:hover {
-      text-decoration: underline;
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #007acc;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #007acc;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
     }
 
     footer {
@@ -94,11 +118,14 @@
 <body>
 
   <header>
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="disclaimer.html">Disclaimer</a>
-    <a href="contact.html">Contact</a>
+    <nav>
+      <a href="index.html" class="nav-link">Grayforge Holdings</a>
+      <a href="https://runewerks.com" class="nav-link" target="_blank">Tech Consulting</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+      <a href="terms.html" class="nav-link">Terms</a>
+      <a href="disclaimer.html" class="nav-link">Disclaimer</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
   </header>
 
   <video autoplay muted loop playsinline id="bg-video">
