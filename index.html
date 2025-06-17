@@ -50,21 +50,40 @@
       font-size: 1.5rem;
     }
 
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.75rem 0;
       text-align: center;
-      color: #ccc;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 0.5rem 0;
+    }
+
+    header a {
+      color: #00aaff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
       font-size: 0.9rem;
     }
 
     footer a {
-      color: #ccc;
+      color: #00aaff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 0.5rem;
     }
 
     footer a:hover {
@@ -73,6 +92,14 @@
   </style>
 </head>
 <body>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="contact.html">Contact</a>
+  </header>
 
   <video autoplay muted loop playsinline id="bg-video">
     <source src="grayforge-bg.mp4" type="video/mp4" />
@@ -84,20 +111,12 @@
     <p>Strategy. Innovation. Holdings.</p>
   </div>
 
-<footer style="
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  font-size: 0.9rem;
-">
-  <a href="privacy.html" style="color: #00aaff; text-decoration: none; margin: 0 0.5rem;">Privacy Policy</a> |
-  <a href="terms.html" style="color: #00aaff; text-decoration: none; margin: 0 0.5rem;">Terms of Service</a> |
-  <a href="disclaimer.html" style="color: #00aaff; text-decoration: none; margin: 0 0.5rem;">Disclaimer</a> |
-  <a href="contact.html" style="color: #00aaff; text-decoration: none; margin: 0 0.5rem;">Contact</a>
-</footer>
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="disclaimer.html">Disclaimer</a> |
+    <a href="contact.html">Contact</a>
+  </footer>
 
 </body>
 </html>
