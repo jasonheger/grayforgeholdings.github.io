@@ -18,6 +18,20 @@
       color: #222;
     }
 
+    .breadcrumb {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .breadcrumb a {
+      color: #0055aa;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       margin-top: 4rem;
       text-align: center;
@@ -25,12 +39,22 @@
       color: #888;
     }
 
-    a {
+    footer a {
       color: #0055aa;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &raquo; Disclaimer
+  </div>
 
   <h1>Disclaimer</h1>
   <p>Effective Date: June 16, 2025</p>
@@ -70,6 +94,10 @@
   </p>
 
   <footer>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a> |
+    <a href="disclaimer.html">Disclaimer</a> |
+    <a href="contact.html">Contact</a><br />
     &copy; 2025 Grayforge Holdings LLC. All rights reserved.
   </footer>
 
